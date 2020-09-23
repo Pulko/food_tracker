@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct Food_TrackerApp: App {
-    let persistenceController = PersistenceController.shared
+  @StateObject private var store = SandwichStore()
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView(store: store)
     }
+  }
+}
+
+struct Food_TrackerApp_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView(store: testStore)
+  }
 }
