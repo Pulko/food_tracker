@@ -30,8 +30,6 @@ struct ContentView: View {
       store.sandwiches.move(fromOffsets: from, toOffset: to)
     }
   }
-  
-  
 
   var body: some View {
     NavigationView {

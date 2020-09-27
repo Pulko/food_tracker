@@ -16,6 +16,7 @@
 		9FBA68562517AF2700AADDF0 /* Food_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA68542517AF2700AADDF0 /* Food_Tracker.xcdatamodeld */; };
 		9FBA685E2517C10500AADDF0 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA685D2517C10500AADDF0 /* Sandwich.swift */; };
 		9FBA685F2517CD5100AADDF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA68502517AF2700AADDF0 /* Preview Assets.xcassets */; };
+		9FBAE3F2251E6B30004A4866 /* NewSandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBAE3F1251E6B30004A4866 /* NewSandwich.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9FBA68552517AF2700AADDF0 /* Food_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		9FBA68572517AF2700AADDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FBA685D2517C10500AADDF0 /* Sandwich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandwich.swift; sourceTree = "<group>"; };
+		9FBAE3F1251E6B30004A4866 /* NewSandwich.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NewSandwich.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9F4104C22517DEF300804E32 /* SandwichDetail.swift */,
 				9F4104C42517E0B400804E32 /* SandwichCell.swift */,
 				9F9F89C7251BDBDB00865B9B /* SandwichStore.swift */,
+				9FBAE3F1251E6B30004A4866 /* NewSandwich.swift */,
 			);
 			path = "Food Tracker";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				9FBA685E2517C10500AADDF0 /* Sandwich.swift in Sources */,
 				9F4104C32517DEF300804E32 /* SandwichDetail.swift in Sources */,
 				9FBA684A2517AF2600AADDF0 /* Food_TrackerApp.swift in Sources */,
+				9FBAE3F2251E6B30004A4866 /* NewSandwich.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ struct SandwichDetail: View {
   @State private var zoomed: Bool = false
 
   var body: some View {
+    NavigationView {
     VStack {
       Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
       
@@ -32,18 +33,20 @@ struct SandwichDetail: View {
         HStack() {
           Spacer()
           
-          VStack {
-            if sandwich.isSpicy {
-              Label(sandwich.name, systemImage: "flame.fill")
-                .foregroundColor(.yellow)
-                .font(.headline)
-            } else {
-              Text(sandwich.name)
-                .font(.headline)
+          NavigationLink(destination: Text(sandwich.name)) {
+            VStack {
+              if sandwich.isSpicy {
+                Label(sandwich.name, systemImage: "flame.fill")
+                  .foregroundColor(.yellow)
+                  .font(.headline)
+              } else {
+                Text(sandwich.name)
+                  .font(.headline)
+              }
+              Text("\(sandwich.ingredientCount) ingredients")
+                .font(.caption)
+                .foregroundColor(sandwich.isSpicy ? .yellow : .black)
             }
-            Text("\(sandwich.ingredientCount) ingredients")
-              .font(.caption)
-              .foregroundColor(sandwich.isSpicy ? .yellow : .black)
           }
 
           Spacer()
@@ -57,6 +60,7 @@ struct SandwichDetail: View {
     }
     .navigationTitle(sandwich.name)
     .edgesIgnoringSafeArea([.bottom])
+  }
   }
 }
 
